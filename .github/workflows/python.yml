@@ -7,7 +7,9 @@
 # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: python-helloworld
-
+permissions:
+  contents: read
+  pull-requests: write
 
 on:   # yamllint disable-line rule:truthy
   push:
